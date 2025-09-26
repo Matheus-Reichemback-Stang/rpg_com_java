@@ -180,7 +180,7 @@ public class JogoFuncoesComplexo {
 
     private static int atacar(int vidaMonstro, Random rand) {
         int danoAleatorio = rand.nextInt(4) + 8;
-        boolean critico = rand.nextDouble(100) < 90;
+        boolean critico = rand.nextDouble(100) < 20;
 
         if(critico) {
             danoAleatorio *= 2;
