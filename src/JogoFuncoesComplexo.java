@@ -1,6 +1,12 @@
 import java.util.Random;
 import java.util.Scanner;
 
+
+/**
+ * @author Katriel Alves da Silva
+ * @author João Pedro Martins Chaves da Silva
+ * @author Matheus Reichemback Stang
+ */
 public class JogoFuncoesComplexo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

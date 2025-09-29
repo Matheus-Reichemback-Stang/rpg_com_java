@@ -2,6 +2,9 @@ package ProjetoComplexo;
 
 import java.util.Random;
 
+/**
+ * @author Matheus Reichemback Stang
+ */
 public class Monstro {
 
     private String nome;
@@ -13,6 +16,14 @@ public class Monstro {
         this.vida = vida;
     }
 
+    /**
+     * Método que faz um ataque a vida de algum Heroi.
+     *
+     * @param random - Define o <b>dano de ataque</b> a ser causado e se foi um <b>dano crítico</b>.
+     * @param heroi - Instância da classe Heroi que é usada para manipulação da vida do herói.
+     *
+     * @see Heroi para mais informações.
+     */
     public void atacar(Random random, Heroi heroi) {
         int ataqueMonstro = random.nextInt(10) + 5; // dano entre 5 e 15
         boolean critico = random.nextInt(100) <= 15; // 15% de chance crítico
